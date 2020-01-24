@@ -38,6 +38,13 @@
             title="联系电话"
             :value="content.mobile"
           />
+          <div >
+            <van-button>提交捐赠信息</van-button>
+          </div>
+          <div style="boder: 1px solid #000" @click="content.showInfo=false">
+            <div>收起</div>
+            <div><van-icon name="arrow-up" /></div>
+          </div>  
         </template>
         <template v-else>
           <div style="boder: 1px solid #000" @click="content.showInfo=true">
